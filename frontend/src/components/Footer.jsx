@@ -1,18 +1,28 @@
 function Footer() {
   return (
-    <footer className="bg-dark text-white section">
-      <div className="container text-center">
-        <h5>Kaushalya Tours & Stays</h5>
-        <p>Trusted Tour & Travel Services</p>
-
-        <p>
-          <i className="bi bi-telephone"></i> +91 9XXXXXXXXX <br />
-          <i className="bi bi-envelope"></i> info@kaushalyatours.com
+    <footer className="bg-dark text-light text-center py-4">
+      <div className="container">
+        <p className="mb-1">
+          © {new Date().getFullYear()} Kaushalya Tours & Stays
         </p>
 
-        <p className="mt-3">
-          © 2025 Kaushalya Tours & Stays. All Rights Reserved.
+        <p className="mb-2">
+          Trusted pilgrimage & travel experiences
         </p>
+
+        <div className="d-flex justify-content-center gap-3">
+          <a href="tel:+919999999999" className="text-light">
+            📞 Call
+          </a>
+          <a
+            href="https://wa.me/919999999999"
+            target="_blank"
+            rel="noreferrer"
+            className="text-light"
+          >
+            💬 WhatsApp
+          </a>
+        </div>
       </div>
     </footer>
   );
