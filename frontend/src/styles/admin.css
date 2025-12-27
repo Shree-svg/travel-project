@@ -1,0 +1,62 @@
+/* ================================
+   ADMIN PANEL STYLES
+================================ */
+
+.admin-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.admin-header h2 {
+  font-weight: 700;
+}
+
+.admin-filters {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.table thead th {
+  white-space: nowrap;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f5ff;
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 50px;
+}
+
+.btn-sm {
+  border-radius: 20px;
+}
+
+.action-buttons button {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table {
+    font-size: 0.9rem;
+  }
+}

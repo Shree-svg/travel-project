@@ -1,0 +1,312 @@
+/* ================================
+   GLOBAL STYLES
+================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  padding-top: 70px; /* for fixed navbar */
+}
+
+/* ================================
+   SECTION SPACING
+================================ */
+.section {
+  padding: 80px 0;
+}
+
+/* ================================
+   HERO ANIMATION
+================================ */
+.animate-fade {
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   CARD HOVER EFFECTS
+================================ */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ================================
+   BUTTON IMPROVEMENTS
+================================ */
+.btn {
+  border-radius: 50px;
+}
+
+.btn-success {
+  background-color: #25d366;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #1ebe5d;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
+
+.navbar a.btn {
+  font-weight: 500;
+}
+
+/* ================================
+   FORM STYLING
+================================ */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-color: #25d366;
+}
+
+/* ================================
+   TESTIMONIALS
+================================ */
+.card p {
+  margin: 10px 0;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  background-color: #111;
+}
+
+footer h5 {
+  font-weight: bold;
+}
+
+footer i {
+  margin-right: 6px;
+}
+
+/* ================================
+   FLOATING WHATSAPP BUTTON
+================================ */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  z-index: 1000;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ================================
+   RESPONSIVE TWEAKS
+================================ */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  h1.display-4 {
+    font-size: 2rem;
+  }
+}
+.badge {
+  font-size: 0.8rem;
+}
+
+.card ul li {
+  margin-bottom: 4px;
+}
+@media (max-width: 768px) {
+  iframe {
+    border-radius: 10px;
+  }
+
+  .list-group-item {
+    font-size: 0.95rem;
+  }
+}
+.timeline {
+  position: relative;
+  margin: 40px 0;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #0d6efd;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background: #0d6efd;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .timeline-content h5 {
+    font-size: 1rem;
+  }
+}
+/* ================================
+   ZIGZAG TIMELINE
+================================ */
+
+.zigzag-timeline {
+  position: relative;
+  margin: 60px 0;
+  padding: 20px 0;
+}
+
+.zigzag-timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #0d6efd;
+  transform: translateX(-50%);
+}
+
+.zigzag-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.zigzag-item.right {
+  justify-content: flex-end;
+}
+
+.zigzag-content {
+  width: 45%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.zigzag-content:hover {
+  transform: translateY(-5px);
+}
+
+.zigzag-content img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.zigzag-body {
+  padding: 15px;
+}
+
+.zigzag-title {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.zigzag-dot {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background: #0d6efd;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  .zigzag-timeline::before {
+    left: 10px;
+  }
+
+  .zigzag-item,
+  .zigzag-item.right {
+    justify-content: flex-start;
+  }
+
+  .zigzag-content {
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  .zigzag-dot {
+    left: 10px;
+    transform: none;
+  }
+}
